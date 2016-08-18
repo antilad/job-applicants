@@ -49,25 +49,25 @@
     // Check for input type then fetch enquiries from database
 	// If query is empty run a query that will not return any results
 	if ($searchTerm == 'nothing') {
-	  $query = "SELECT * FROM jobApplicants WHERE idNumber='99999' ORDER BY lastName DESC";
+	  $query = "SELECT * FROM jobApplicants WHERE idNumber='99999' ORDER BY lastName ASC, firstName ASC";
 	  $data = mysqli_query($dbaccess, $query);
 	  $searchType = 'at all';
     }
 	// If query is a number search by candidate number
     else if (is_numeric($searchTerm)) {
-	  $query = "SELECT * FROM jobApplicants WHERE idNumber=$searchTerm ORDER BY lastName DESC";
+	  $query = "SELECT * FROM jobApplicants WHERE idNumber=$searchTerm ORDER BY lastName ASC, firstName ASC";
 	  $data = mysqli_query($dbaccess, $query);
 	  $searchType = 'by candidate number';
     }
 	// If query is not a number search by name
     else if (!is_numeric($searchTerm)) {
-	  $query = "SELECT * FROM jobApplicants WHERE firstName LIKE '" .$searchTerm. "' OR lastName LIKE '" .$searchTerm. "' OR CONCAT(firstName, lastName) LIKE '" .$searchNoSpaces. "' ORDER BY lastName DESC";
+	  $query = "SELECT * FROM jobApplicants WHERE firstName LIKE '" .$searchTerm. "' OR lastName LIKE '" .$searchTerm. "' OR CONCAT(firstName, lastName) LIKE '" .$searchNoSpaces. "' ORDER BY lastName ASC, firstName ASC";
 	  $data = mysqli_query($dbaccess, $query);
 	  $searchType = 'by name';
     }
 	// If none of the above apply run a query that will not return any results
     else {
-	  $query = "SELECT * FROM jobApplicants WHERE idNumber='99999' ORDER BY lastName DESC";
+	  $query = "SELECT * FROM jobApplicants WHERE idNumber='99999' ORDER BY lastName ASC, firstName ASC";
 	  $data = mysqli_query($dbaccess, $query);
 	  $searchType = 'by name';
     }
