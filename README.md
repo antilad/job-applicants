@@ -19,5 +19,5 @@ A live demo of this project can be accessed at http://antilad.com/projects/job-a
 + search.php - Search page, allows searching by name or candidate number
 + view.php - Page displaying all details for specific record based on candidate number
 
-## Thanks
+## Acknowledgements
 alphagov (GOV.UK Prototype Kit v3.0.0)
