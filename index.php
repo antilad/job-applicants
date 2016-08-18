@@ -38,7 +38,7 @@
     $dbaccess = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
     // Fetch all records from database
-    $query = "SELECT * FROM jobApplicants ORDER BY lastName DESC, firstName DESC";
+    $query = "SELECT * FROM jobApplicants ORDER BY lastName ASC, firstName ASC";
     $data = mysqli_query($dbaccess, $query);
     ?>
 
