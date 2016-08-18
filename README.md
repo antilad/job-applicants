@@ -1,5 +1,5 @@
 # Job Applicants
-A project to display the applicants for a job vacancy using a design based upon the GOV.UK frontend
+A project to display the applicants for a job vacancy using a design based upon the GOV.UK frontend.
 
 ## About
 This project contains a mixture of HTML, CSS, JavaScript and PHP/MySQL. The template used throughout was built using the GOV.UK Prototype Kit v3.0.0 (https://github.com/alphagov/govuk_prototype_kit) and styled in line with GOV.UK conventions then modified with PHP coding to add functionality to connect to the MySQL database table containing the applicant data and read, display and search through this data.
