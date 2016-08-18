@@ -1,4 +1,4 @@
-# Job-Applicants
+# Job Applicants
 A project to display the applicants for a job vacancy using a design based upon the GOV.UK frontend
 
 ## About
