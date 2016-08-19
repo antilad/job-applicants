@@ -137,11 +137,12 @@
         <nav role="navigation" aria-labelledby="subsection-title">
           <div class="form-group">
             <form id="applicantSearch" method="post" action="search.php">
-            <p class="font-xsmall">Insert your query (name or candidate number) into the box and press Search</p>
-            <input type="text" class="form-control" id="searchTerm" name="searchTerm">
+              <p class="font-xsmall">Insert your query (name or candidate number) into the box and press Search</p>
+              <input type="text" class="form-control" id="searchTerm" name="searchTerm">
           </div>
           <div class="form-group">
             <input type="submit" class="button" value="Search">
+            </form>
           </div>
         </nav>
       </aside>
